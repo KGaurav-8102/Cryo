@@ -1,0 +1,44 @@
+@import '../utils/colors.scss';
+
+.testimonial-container {
+     .quote {
+          position: relative;
+          span {
+               position: absolute;
+               font-size: 5rem;
+               color: #f32a8f8f;
+          }
+     }
+     height: 16rem;
+     width: 95%;
+     border: none;
+     border-radius: 0.4rem;
+     background-color: white;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+     padding: 1rem;
+     transition: 0.4 ease-in-out;
+     &:hover {
+          box-shadow: rgba(99, 15, 179, 0.5) 5px 5px, rgba(99, 15, 179, 0.3) 10px 10px, rgba(99, 15, 179, 0.1) 15px 15px ;
+     }
+     .content {
+          color: $lightFontColor;
+          font-weight: 600;
+          margin-top: 0.5rem;
+     }
+     .author {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          color: rgb(99, 15, 179);
+          .name {
+               font-size: large;
+               font-weight: bold;
+          }
+          .designation {
+               font-size: medium;
+          }
+     }
+}

@@ -1,0 +1,27 @@
+@import '../utils/colors.scss';
+
+.testimonials-container  {
+     background-color: $backgroundOtherColor;
+     .container {
+          margin: 0 10%;
+          padding: 5rem 0;
+          .title-container {
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               flex-direction: column;
+               .title {
+                    margin-bottom: 1rem;
+               }
+               p {
+                    color: $lightFontColor;
+               }
+          }
+          .testimonials {
+               margin-top: 1.5rem;
+               display: grid;
+               grid-template-columns: repeat(3, 1fr);
+               gap: 3rem;
+          }
+     }
+}
